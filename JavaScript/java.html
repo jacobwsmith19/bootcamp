@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<h1>Favorite Bands exercise</h1>
+
+<script type="text/javascript">
+            
+    var favoriteBands = ["Beck", "Gary Clark Jr.", "Sam Smith", "Queen"];
+    var favoriteColors = ["Red", "Blue", "Green", "Yellow"];
+        
+    console.log(favoriteBands.length);
+     // to show # of bands in console  
+    
+    console.log(favoriteColors[1]);
+    // to show offset of 1 in console (Blue)
+    
+    var userInput = prompt("What's your favorite band?")
+    var userColor = prompt("What's your favorite color?")
+    
+    if (userInput === favoriteBands[1]) {
+        alert("YEAH I LOVE GCJ TOO!");
+    }
+
+    else { if (userInput === favoriteBands[0]) {
+        alert("YEAH I LOVE BECK TOO!");
+
+    }else { if (userInput === favoriteBands[2]) {
+        alert("YEAH I LOVE SS TOO!");
+
+    }else { if (userInput === favoriteBands[3]) {
+        alert("YEAH I LOVE QUEEN TOO!");
+
+    }else {
+        alert("Nah. They're pretty lame.");
+    }}}}
+    
+    if (userColor === favoriteColors[1] || userColor === favoriteColors[0] || userColor === favoriteColors[2] || userColor === favoriteColors[3]) {
+        alert("You have great taste in colors!");
+    }else {
+        alert("You colorblind, bro?")
+    }
+
+
+</script>   
+    
+</body>
+</html>
